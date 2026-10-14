@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PowerHub Electricals supplies dependable electrical gadgets, wholesale stock, accessories, and professional gadget repairs.">
+  <title>PowerHub Electricals | Gadgets, Wholesale &amp; Repairs</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Work+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Your custom styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="sticky top-0 z-50 border-b border-cyan-100/10 bg-[#07111f]/90 backdrop-blur-xl">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Main navigation">
+        <a href="#home" class="flex items-center gap-3 rounded-lg">
+          <span class="grid h-10 w-10 place-items-center rounded-xl bg-cyan-300/10 text-cyan-300 ring-1 ring-cyan-300/30" aria-hidden="true">
+            <i data-lucide="zap" class="h-5 w-5"></i>
+          </span>
+          <span class="font-bold tracking-tight text-white">PowerHub Electricals</span>
+        </a>
+        <div class="hidden items-center gap-6 text-sm font-medium lg:flex">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#shop">Shop</a>
+          <a class="nav-link" href="#wholesale">Wholesale</a>
+          <a class="nav-link" href="#repairs">Repairs</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="primary-button rounded-xl px-4 py-2.5 text-sm font-bold transition" href="#contact">Get a Quote</a>
+        </div>
+        <button id="menu-toggle" type="button" class="rounded-xl border border-white/15 p-2 text-white lg:hidden" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Toggle navigation menu</span>
+          <i data-lucide="menu" class="h-5 w-5"></i>
+        </button>
+      </nav>
+      <div id="mobile-menu" class="mobile-menu mx-5 mb-4 flex-col gap-2 rounded-2xl border border-white/10 bg-[#0c1a2d] p-4 lg:hidden">
+        <a class="nav-link rounded-lg px-3 py-2" href="#home">Home</a>
+        <a class="nav-link rounded-lg px-3 py-2" href="#shop">Shop</a>
+        <a class="nav-link rounded-lg px-3 py-2" href="#wholesale">Wholesale</a>
+        <a class="nav-link rounded-lg px-3 py-2" href="#repairs">Repairs</a>
+        <a class="nav-link rounded-lg px-3 py-2" href="#about">About</a>
+        <a class="nav-link rounded-lg px-3 py-2" href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="home" class="hero-stage tech-grid">
+        <div class="circuit-orb orb-one" aria-hidden="true"></div>
+        <div class="circuit-orb orb-two" aria-hidden="true"></div>
+        <div class="mx-auto grid min-h-[78vh] max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-[1.12fr_.88fr] lg:px-8">
+          <div>
+            <p class="reveal mb-5 inline-flex rounded-full border border-cyan-200/30 bg-cyan-200/10 px-4 py-2 text-sm font-bold uppercase tracking-[.16em] text-cyan-200">Gadgets • Supply • Repairs</p>
+            <h1 class="reveal delay-1 max-w-4xl text-4xl font-extrabold leading-[1.04] tracking-tight text-white sm:text-5xl lg:text-7xl">Powering Your Everyday. Repairing What Matters.</h1>
+            <p class="reveal delay-2 mt-6 max-w-2xl text-lg leading-8 text-slate-200">Discover dependable electrical gadgets for everyday life, flexible wholesale supply for your organisation, and professional repairs that help your essential devices go further.</p>
+            <div class="reveal delay-3 mt-9 flex flex-col gap-3 sm:flex-row">
+              <a class="primary-button rounded-xl px-6 py-3.5 text-center font-bold transition" href="#shop">Shop Gadgets</a>
+              <a class="secondary-button rounded-xl border border-white/30 bg-white/5 px-6 py-3.5 text-center font-bold text-white transition" href="#repairs">Book a Repair</a>
+            </div>
+          </div>
+          <aside class="glass-card relative overflow-hidden rounded-3xl p-6 sm:p-8">
+            <div class="absolute -right-12 -top-12 h-36 w-36 rounded-full bg-violet-500/20 blur-3xl"></div>
+            <p class="relative text-sm font-bold uppercase tracking-[.16em] text-cyan-300">PowerHub at a glance</p>
+            <div class="relative mt-6 grid gap-4">
+              <div class="rounded-2xl border border-white/10 bg-slate-950/25 p-4">
+                <i data-lucide="smartphone" class="mb-3 h-6 w-6 text-cyan-300"></i>
+                <p class="font-semibold">Everyday tech and essential accessories</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-slate-950/25 p-4">
+                <i data-lucide="battery-charging" class="mb-3 h-6 w-6 text-violet-300"></i>
+                <p class="font-semibold">Power solutions that keep pace</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-slate-950/25 p-4">
+                <i data-lucide="wrench" class="mb-3 h-6 w-6 text-cyan-300"></i>
+                <p class="font-semibold">Skilled care for gadgets worth saving</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Trust strip -->
+      <section class="border-y border-cyan-100/10 bg-[#09182a]">
+        <div class="mx-auto grid max-w-7xl divide-y divide-cyan-100/10 px-5 py-3 sm:grid-cols-3 sm:divide-x sm:divide-y-0 lg:px-8">
+          <div class="flex items-center gap-3 px-4 py-4">
+            <i data-lucide="tags" class="h-5 w-5 text-cyan-300"></i>
+            <p class="font-semibold">Retail &amp; Wholesale Pricing</p>
+          </div>
+          <div class="flex items-center gap-3 px-4 py-4">
+            <i data-lucide="badge-check" class="h-5 w-5 text-cyan-300"></i>
+            <p class="font-semibold">Tested Quality Products</p>
+          </div>
+          <div class="flex items-center gap-3 px-4 py-4">
+            <i data-lucide="settings-2" class="h-5 w-5 text-cyan-300"></i>
+            <p class="font-semibold">Skilled Gadget Repairs</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shop / Categories -->
+      <section id="shop" class="tech-grid px-5 py-20 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+          <div class="max-w-2xl">
+            <p class="text-sm font-bold uppercase tracking-[.16em] text-cyan-300">Find your essential tech</p>
+            <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Gadgets that keep life connected</h2>
+            <p class="mt-4 leading-7 text-slate-300">Browse practical, dependable technology and accessories selected for work, home, learning, and life on the move.</p>
+          </div>
+          <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="category-card rounded-2xl border border-white/10 bg-[#0c1a2b] p-6">
+              <i data-lucide="smartphone" class="h-8 w-8 text-cyan-300"></i>
+              <h3 class="mt-6 text-xl font-bold">Mobile Accessories</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-300">Cases, screen protection, holders, and everyday mobile essentials.</p>
+              <a class="mt-5 inline-flex items-center gap-2 font-bold text-cyan-300" href="#contact">Explore accessories →</a>
+            </article>
+            <article class="category-card rounded-2xl border border-white/10 bg-[#0c1a2b] p-6">
+              <i data-lucide="battery-charging" class="h-8 w-8 text-violet-300"></i>
+              <h3 class="mt-6 text-xl font-bold">Chargers &amp; Power Banks</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-300">Reliable charging options for home, travel, work, and backup power.</p>
+              <a class="mt-5 inline-flex items-center gap-2 font-bold text-cyan-300" href="#contact">View power options →</a>
+            </article>
+            <article class="category-card rounded-2xl border border-white/10 bg-[#0c1a2b] p-6">
+              <i data-lucide="headphones" class="h-8 w-8 text-cyan-300"></i>
+              <h3 class="mt-6 text-xl font-bold">Audio Gadgets</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-300">Earphones, headphones, speakers, and compact audio accessories.</p>
+              <a class="mt-5 inline-flex items-center gap-2 font-bold text-cyan-300" href="#contact">Browse audio gear →</a>
+            </article>
+            <article class="category-card rounded-2xl border border-white/10 bg-[#0c1a2b] p-6">
+              <i data-lucide="house-plug" class="h-8 w-8 text-violet-300"></i>
+              <h3 class="mt-6 text-xl font-bold">Smart Home Devices</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-300">Helpful connected devices for a more capable everyday space.</p>
+              <a class="mt-5 inline-flex items-center gap-2 font-bold text-cyan-300" href="#contact">Discover smart tech →</a>
+            </article>
+            <article class="category-card rounded-2xl border border-white/10 bg-[#0c1a2b] p-6">
+              <i data-lucide="keyboard" class="h-8 w-8 text-cyan-300"></i>
+              <h3 class="mt-6 text-xl font-bold">Computer Accessories</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-300">Keyboards, mice, storage, and desktop essentials for productive setups.</p>
+              <a class="mt-5 inline-flex items-center gap-2 font-bold text-cyan-300" href="#contact">Shop computer gear →</a>
+            </article>
+            <article class="category-card rounded-2xl border border-white/10 bg-[#0c1a2b] p-6">
+              <i data-lucide="cable" class="h-8 w-8 text-violet-300"></i>
+              <h3 class="mt-6 text-xl font-bold">Cables &amp; Adapters</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-300">The connections, converters, and cables that make your devices work together.</p>
+              <a class="mt-5 inline-flex items-center gap-2 font-bold text-cyan-300" href="#contact">Find the right cable →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Wholesale -->
+      <section id="wholesale" class="px-5 py-20 lg:px-8">
+        <div class="mx-auto max-w-7xl overflow-hidden rounded-3xl border border-violet-300/20 bg-[#151039] p-7 sm:p-10">
+          <div class="grid items-center gap-10 lg:grid-cols-[1fr_.85fr]">
+            <div>
+              <p class="text-sm font-bold uppercase tracking-[.16em] text-cyan-300">Wholesale supply</p>
+              <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Stock up with a supply partner built for business.</h2>
+              <p class="mt-5 max-w-2xl leading-7 text-slate-200">From resellers and offices to schools and organisations, we make it simpler to source the electrical gadgets and accessories your people rely on.</p>
+              <a class="primary-button mt-8 inline-block rounded-xl px-6 py-3.5 font-bold transition" href="#contact">Request Wholesale Pricing</a>
+            </div>
+            <div class="grid gap-3">
+              <div class="glass-card rounded-2xl p-4"><p class="font-semibold">Competitive bulk pricing</p></div>
+              <div class="glass-card rounded-2xl p-4"><p class="font-semibold">Dependable supply for repeat orders</p></div>
+              <div class="glass-card rounded-2xl p-4"><p class="font-semibold">Flexible order quantities</p></div>
+              <div class="glass-card rounded-2xl p-4"><p class="font-semibold">Responsive, practical support</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Repairs -->
+      <section id="repairs" class="bg-[#09182a] px-5 py-20 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+          <div class="grid gap-10 lg:grid-cols-[.8fr_1.2fr]">
+            <div>
+              <p class="text-sm font-bold uppercase tracking-[.16em] text-cyan-300">Professional gadget repairs</p>
+              <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">A clear route from fault to fix.</h2>
+              <p class="mt-5 leading-7 text-slate-300">Bring in phones, tablets, laptops, chargers, speakers, power banks, and other electrical gadgets. We assess the issue and help you make an informed next step.</p>
+              <a class="primary-button mt-8 inline-block rounded-xl px-6 py-3.5 font-bold transition" href="#contact">Start a Repair Request</a>
+            </div>
+            <ol class="grid gap-4 sm:grid-cols-2">
+              <li class="rounded-2xl border border-white/10 bg-[#0d2034] p-6">
+                <span class="text-cyan-300">01</span>
+                <h3 class="mt-5 text-xl font-bold">Diagnose</h3>
+                <p class="mt-2 text-sm leading-6 text-slate-300">Tell us what is happening and bring the gadget in for assessment.</p>
+              </li>
+              <li class="rounded-2xl border border-white/10 bg-[#0d2034] p-6">
+                <span class="text-violet-300">02</span>
+                <h3 class="mt-5 text-xl font-bold">Approve</h3>
+                <p class="mt-2 text-sm leading-6 text-slate-300">Review the recommended repair and approve the work before it begins.</p>
+              </li>
+              <li class="rounded-2xl border border-white/10 bg-[#0d2034] p-6">
+                <span class="text-cyan-300">03</span>
+                <h3 class="mt-5 text-xl font-bold">Repair</h3>
+                <p class="mt-2 text-sm leading-6 text-slate-300">Our team carries out the agreed work with care and attention to detail.</p>
+              </li>
+              <li class="rounded-2xl border border-white/10 bg-[#0d2034] p-6">
+                <span class="text-violet-300">04</span>
+                <h3 class="mt-5 text-xl font-bold">Collect</h3>
+                <p class="mt-2 text-sm leading-6 text-slate-300">We will let you know when your gadget is ready for collection.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why us -->
+      <section class="tech-grid px-5 py-20 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+          <div class="max-w-2xl">
+            <p class="text-sm font-bold uppercase tracking-[.16em] text-cyan-300">The PowerHub difference</p>
+            <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Straightforward service, powered by care.</h2>
+          </div>
+          <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <article class="rounded-2xl border border-white/10 bg-[#0c1a2b] p-6">
+              <i data-lucide="shield-check" class="h-7 w-7 text-cyan-300"></i>
+              <h3 class="mt-5 text-xl font-bold">Reliable Products</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-300">Useful products selected with everyday performance in mind.</p>
+            </article>
+            <article class="rounded-2xl border border-white/10 bg-[#0c1a2b] p-6">
+              <i data-lucide="circle-dollar-sign" class="h-7 w-7 text-violet-300"></i>
+              <h3 class="mt-5 text-xl font-bold">Fair Pricing</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-300">Clear options for individual purchases, repairs, and volume orders.</p>
+            </article>
+            <article class="rounded-2xl border border-white/10 bg-[#0c1a2b] p-6">
+              <i data-lucide="wrench" class="h-7 w-7 text-cyan-300"></i>
+              <h3 class="mt-5 text-xl font-bold">Expert Service</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-300">Thoughtful support to help you choose, troubleshoot, and repair.</p>
+            </article>
+            <article class="rounded-2xl border border-white/10 bg-[#0c1a2b] p-6">
+              <i data-lucide="messages-square" class="h-7 w-7 text-violet-300"></i>
+              <h3 class="mt-5 text-xl font-bold">Customer Support</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-300">Friendly communication from your first question to your next order.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="border-y border-white/10 bg-[#0b1728] px-5 py-20 lg:px-8">
+        <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[.7fr_1.3fr]">
+          <p class="self-start text-sm font-bold uppercase tracking-[.16em] text-cyan-300">About PowerHub</p>
+          <div>
+            <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Technology should stay useful for longer.</h2>
+            <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-300">PowerHub Electricals exists to make dependable gadgets easier to access and to give the devices people already own a better chance at a longer working life. Whether you are buying one essential accessory, stocking a workplace, or restoring a gadget you rely on, we focus on practical advice, quality service, and solutions that make sense.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="px-5 py-20 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+          <div class="max-w-2xl">
+            <p class="text-sm font-bold uppercase tracking-[.16em] text-cyan-300">Let's get connected</p>
+            <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">Request a quote or repair assessment.</h2>
+            <p class="mt-4 leading-7 text-slate-300">Share what you need and our team can follow up with the right next step.</p>
+          </div>
+          <div class="mt-10 grid gap-7 lg:grid-cols-[.9fr_1.1fr]">
+            <aside class="space-y-5">
+              <div class="rounded-2xl border border-white/10 bg-[#0c1a2b] p-6">
+                <h3 class="text-xl font-bold">Contact details</h3>
+                <div class="mt-6 space-y-5 text-slate-200">
+                  <div class="flex gap-3">
+                    <i data-lucide="phone" class="h-5 w-5 shrink-0 text-cyan-300"></i>
+                    <div>
+                      <p class="text-sm text-slate-400">Phone</p>
+                      <p class="font-semibold">+254 706 622 996</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <i data-lucide="mail" class="h-5 w-5 shrink-0 text-cyan-300"></i>
+                    <div>
+                      <p class="text-sm text-slate-400">Email</p>
+                      <p class="font-semibold">@powerhubelectricals.com</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <i data-lucide="map-pin" class="h-5 w-5 shrink-0 text-cyan-300"></i>
+                    <div>
+                      <p class="text-sm text-slate-400">Address</p>
+                      <p class="font-semibold">20100, Nakuru city</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <i data-lucide="clock-3" class="h-5 w-5 shrink-0 text-cyan-300"></i>
+                    <div>
+                      <p class="text-sm text-slate-400">Opening hours</p>
+                      <p class="font-semibold">Mon–Sat: 8:30 AM–6:00 PM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="relative min-h-48 overflow-hidden rounded-2xl border border-white/10 bg-[#111a3f] p-6">
+                <div class="absolute inset-0 opacity-30 tech-grid"></div>
+                <div class="relative">
+                  <i data-lucide="map-pinned" class="h-8 w-8 text-violet-300"></i>
+                  <h3 class="mt-6 text-xl font-bold">Find our store</h3>
+                  <p class="mt-2 leading-6 text-slate-300">Albastuz 3D Ent</p>
+                </div>
+              </div>
+            </aside>
+
+            <form id="enquiry-form" class="glass-card rounded-2xl p-6 sm:p-8" novalidate>
+              <h3 class="text-2xl font-bold">Tell us what you need</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-300">All fields are required. Your request will be shown in the browser console (demo mode).</p>
+              <div class="mt-7 grid gap-5">
+                <div>
+                  <label class="mb-2 block text-sm font-semibold" for="enquiry-name">Your name</label>
+                  <input class="field" id="enquiry-name" name="name" type="text" autocomplete="name" required placeholder="Enter your name">
+                </div>
+                <div>
+                  <label class="mb-2 block text-sm font-semibold" for="enquiry-contact">Phone number or email</label>
+                  <input class="field" id="enquiry-contact" name="contact" type="text" autocomplete="tel" required placeholder="How should we contact you?">
+                </div>
+                <div>
+                  <label class="mb-2 block text-sm font-semibold" for="service-type">What can we help with?</label>
+                  <select id="service-type" class="field" name="service_type" required>
+                    <option value="">Choose a service</option>
+                    <option value="Retail Purchase">Retail Purchase</option>
+                    <option value="Wholesale Enquiry">Wholesale Enquiry</option>
+                    <option value="Gadget Repair">Gadget Repair</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="mb-2 block text-sm font-semibold" for="product-details">Gadget or product details</label>
+                  <input class="field" id="product-details" name="product_details" type="text" required placeholder="For example: laptop charging issue or bulk USB-C chargers">
+                </div>
+                <div>
+                  <label class="mb-2 block text-sm font-semibold" for="enquiry-message">Message</label>
+                  <textarea class="field min-h-28 resize-y" id="enquiry-message" name="message" required placeholder="Tell us anything else that will help us assist you"></textarea>
+                </div>
+              </div>
+              <p id="form-error" class="mt-4 hidden rounded-xl border border-red-400/30 bg-red-400/10 px-4 py-3 text-sm text-red-100" role="alert"></p>
+              <div id="form-success" class="mt-5 hidden rounded-xl border border-cyan-300/30 bg-cyan-300/10 p-4" role="status">
+                <p class="font-bold text-cyan-200">Your request has been recorded (demo).</p>
+                <p class="mt-1 text-sm leading-6 text-slate-200">Check the browser console (F12) to see the submitted data. In a real site this would go to a server.</p>
+              </div>
+              <button id="submit-button" class="primary-button mt-7 w-full rounded-xl px-6 py-3.5 font-bold transition disabled:cursor-not-allowed disabled:opacity-60" type="submit">Record My Enquiry</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 bg-[#050d18] px-5 pt-14 lg:px-8">
+      <div class="mx-auto grid max-w-7xl gap-10 pb-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <p class="text-xl font-bold">PowerHub Electricals</p>
+          <p class="mt-4 leading-6 text-slate-400">Dependable gadgets, practical wholesale supply, and repairs that keep life powered.</p>
+        </div>
+        <div>
+          <h2 class="font-bold">Services</h2>
+          <div class="mt-4 grid gap-2 text-sm">
+            <a class="text-slate-400 hover:text-cyan-300" href="#shop">Shop gadgets</a>
+            <a class="text-slate-400 hover:text-cyan-300" href="#wholesale">Wholesale supply</a>
+            <a class="text-slate-400 hover:text-cyan-300" href="#repairs">Gadget repairs</a>
+          </div>
+        </div>
+        <div>
+          <h2 class="font-bold">Contact</h2>
+          <div class="mt-4 grid gap-2 text-sm text-slate-400">
+            <p>+254 706 622 996</p>
+            <p>@powerhubelectricals.com</p>
+            <p>Your shop address, town or city</p>
+          </div>
+        </div>
+        <div>
+          <h2 class="font-bold">Follow us</h2>
+          <div class="mt-4 flex gap-3">
+            <a class="grid h-10 w-10 place-items-center rounded-xl border border-white/15 text-slate-300 hover:border-cyan-300 hover:text-cyan-300" href="#contact" aria-label="Facebook">
+              <i data-lucide="facebook" class="h-4 w-4"></i>
+            </a>
+            <a class="grid h-10 w-10 place-items-center rounded-xl border border-white/15 text-slate-300 hover:border-cyan-300 hover:text-cyan-300" href="#contact" aria-label="Instagram">
+              <i data-lucide="instagram" class="h-4 w-4"></i>
+            </a>
+            <a class="grid h-10 w-10 place-items-center rounded-xl border border-white/15 text-slate-300 hover:border-cyan-300 hover:text-cyan-300" href="#contact" aria-label="WhatsApp">
+              <i data-lucide="message-circle" class="h-4 w-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto flex max-w-7xl flex-col gap-3 border-t border-white/10 py-6 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+        <p>© PowerHub Electricals. All rights reserved.</p>
+        <p>Privacy note: enquiry details are used only to respond to your request.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Your custom script -->
+  <script src="script.js"></script>
+</body>
+</html>
